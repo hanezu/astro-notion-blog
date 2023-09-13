@@ -107,9 +107,9 @@ interface Reference {
   id: string
 }
 
+// Change DateProperty to something like CreatdTimeProperty
 interface DateProperty {
-  start: string
-  end?: null | string
+  created_time: string
   timezone?: null | string
 }
 
