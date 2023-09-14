@@ -78,17 +78,11 @@ export async function getAllPosts(): Promise<Post[]> {
             equals: true,
           },
         },
-        {
-          property: 'Date',
-          date: {
-            on_or_before: new Date().toISOString(),
-          },
-        },
       ],
     },
     sorts: [
       {
-        property: 'Date',
+        property: 'Created',
         direction: 'descending',
       },
     ],
